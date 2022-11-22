@@ -68,7 +68,7 @@ public class Cajero {
     }
 
 
-        System.out.println("Ingrese la cantidad que desea depositar: ");
+        System.out.println("Ingrese la cantidad que desea retirar: ");
         retiro= sc.nextDouble();
         if(retiro<getDinero()&&getDinero()!=0) {
             total = getDinero() + retiro;
@@ -82,7 +82,8 @@ public class Cajero {
     {
         for(Cajero cajero:datosT)
         {}
-        System.out.println(datosT.toString());
+        for(int i=0; i<1;i++)
+        System.out.println(datosT[i].toString());
     }
 
     public int getNumeroT() {
